@@ -45,7 +45,7 @@ CLIENT_ROOT=`pwd`
 popd > /dev/null
 
 TEMP_FOLDER=$(mktemp -d)
-# trap "rm -rf ${TEMP_FOLDER}" EXIT SIGINT
+trap "rm -rf ${TEMP_FOLDER}" EXIT SIGINT
 
 SETTING_FILE="${TEMP_FOLDER}/settings"
 echo "export KUBERNETES_BRANCH=\"$(python ${SCRIPT_ROOT}/constants.py KUBERNETES_BRANCH)\"" > $SETTING_FILE

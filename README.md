@@ -1,13 +1,12 @@
-# Kubernetes Python Client
+# Voyager Python Client
 
 [![Build Status](https://travis-ci.org/voyager-client/python.svg?branch=master)](https://travis-ci.org/voyager-client/python)
-[![PyPI version](https://badge.fury.io/py/kubernetes.svg)](https://badge.fury.io/py/kubernetes)
+[![PyPI version](https://badge.fury.io/py/voyager.svg)](https://badge.fury.io/py/voyager)
 [![codecov](https://codecov.io/gh/voyager-client/python/branch/master/graph/badge.svg)](https://codecov.io/gh/voyager-client/python "Non-generated packages only")
-[![pypi supported versions](https://img.shields.io/pypi/pyversions/kubernetes.svg)](https://pypi.python.org/pypi/kubernetes)
+[![pypi supported versions](https://img.shields.io/pypi/pyversions/voyager.svg)](https://pypi.python.org/pypi/kubernetes)
 [![Client Capabilities](https://img.shields.io/badge/Kubernetes%20client-Silver-blue.svg?style=flat&colorB=C0C0C0&colorA=306CE8)](http://bit.ly/voyager-client-capabilities-badge)
-[![Client Support Level](https://img.shields.io/badge/kubernetes%20client-beta-green.svg?style=flat&colorA=306CE8)](http://bit.ly/voyager-client-support-badge)
 
-Python client for the [kubernetes](http://kubernetes.io/) API.
+Official Python client for the [Voyager by AppsCode](https://appscode.com/products/voyager/) - Secure HAProxy Ingress Controller for Kubernetes.
 
 ## Installation
 
@@ -19,10 +18,10 @@ cd python
 python setup.py install
 ```
 
-From [PyPi](https://pypi.python.org/pypi/kubernetes/) directly:
+From [PyPi](https://pypi.python.org/pypi/voyager/) directly:
 
 ```
-pip install kubernetes
+pip install voyager
 ```
 
 ## Example
@@ -78,20 +77,15 @@ All APIs and Models' documentation can be found at the [Generated client's READM
 ## Compatibility
 
 `client-python` follows [semver](http://semver.org/), so until the major version of
-client-python gets increased, your code will continue to work with explicitly 
+client-python gets increased, your code will continue to work with explicitly
 supported versions of Kubernetes clusters.
 
 #### Compatibility matrix
 
-|                    | Kubernetes 1.4 | Kubernetes 1.5 | Kubernetes 1.6 | Kubernetes 1.7 | Kubernetes 1.8 | Kubernetes 1.9 | Kubernetes 1.10 |
-|--------------------|----------------|----------------|----------------|----------------|----------------|----------------|-----------------|
-| client-python 1.0  | +              | ✓              | -              | -              |-               |-               |                 |
-| client-python 2.0  | +              | +              | ✓              | -              |-               |-               |                 |
-| client-python 3.0  | +              | +              | +              | ✓              |-               |-               |                 |
-| client-python 4.0  | +              | +              | +              | +              |✓               |-               |                 |
-| client-python 5.0  | +              | +              | +              | +              |+               |✓               |                 |
-| client-python 6.0  | +              | +              | +              | +              |+               |+               |✓                |
-| client-python HEAD | +              | +              | +              | +              |+               |+               |✓                |
+|      | Kubernetes 1.8 | Kubernetes 1.9 | Kubernetes 1.10 |
+|------|----------------|----------------|-----------------|
+| 1.0  | -              |-               |                 |
+| HEAD | +              |+               |✓                |
 
 Key:
 
@@ -107,18 +101,7 @@ between client-python versions.
 
 | Client version | Canonical source for OpenAPI spec    | Maintenance status            |
 |----------------|--------------------------------------|-------------------------------|
-| 1.0 Alpha/Beta | Kubernetes main repo, 1.5 branch     | ✗                             |
-| 1.0.x          | Kubernetes main repo, 1.5 branch     | ✓                             |
-| 2.0 Alpha/Beta | Kubernetes main repo, 1.6 branch     | ✗                             |
-| 2.0.x          | Kubernetes main repo, 1.6 branch     | ✓                             |
-| 3.0 Alpha/Beta | Kubernetes main repo, 1.7 branch     | ✗                             |
-| 3.0            | Kubernetes main repo, 1.7 branch     | ✓                             |
-| 4.0 Alpha/Beta | Kubernetes main repo, 1.8 branch     | ✗                             |
-| 4.0            | Kubernetes main repo, 1.8 branch     | ✓                             |
-| 5.0 Alpha/Beta | Kubernetes main repo, 1.9 branch     | ✗                             |
-| 5.0            | Kubernetes main repo, 1.9 branch     | ✓                             |
-| 6.0 Alpha/Beta | Kubernetes main repo, 1.10 branch    | ✗                             |
-| 6.0            | Kubernetes main repo, 1.10 branch    | ✓                             |
+| 1.0 Alpha/Beta | Kubernetes main repo, 1.10 branch    | ✗                             |
 
 
 Key:
@@ -131,17 +114,6 @@ Note: There would be no maintenance for alpha/beta releases except the latest on
 ## Community, Support, Discussion
 
 You can reach the maintainers of this project at [SIG API Machinery](https://github.com/kubernetes/community/tree/master/sig-api-machinery). If you have any problem with the package or any suggestions, please file an [issue](https://github.com/voyager-client/python/issues).
-
-### Code of Conduct
-
-Participation in the Kubernetes community is governed by the [CNCF Code of Conduct](https://github.com/cncf/foundation/blob/master/code-of-conduct.md).
-
-## Kubernetes Incubator
-
-This is a [Kubernetes Incubator project](https://github.com/kubernetes/community/blob/master/incubator.md). 
-
-* [SIG: sig-api-machinery](https://github.com/kubernetes/community/tree/master/sig-api-machinery)
-
 
 ## Troubleshooting
 
